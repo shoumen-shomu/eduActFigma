@@ -6,6 +6,7 @@
   --color-primary: #4f5de4;
   --color-secondary: #f57005;
 }
+
 .clip-ss {
   clip-path: polygon(0 0, 96% 0, 81% 100%, 0 100%);
 }
