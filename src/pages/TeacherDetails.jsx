@@ -47,7 +47,7 @@ const TeacherDetails = () => {
                         </div>
                         <div className="right pt-[165px] pb-[180px]">
                             <h4 className='text-primaryTwo text-[32px] font-bold'>Hello, I’m William Ketty</h4>
-                            <p className='text-[20px] text-secondary'>UI/UX Designer</p>
+                            <p className='text-[20px] text-secondarys'>UI/UX Designer</p>
                             <p className='text-[#697585] text-base font-semibold leading-8 w-[678px] pt-7.5 pb-12.5'>There are many variations of passages of Lorem Ipsum avagtilable, but the majority have suffered alteration in some form, by injected hudfdfmour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. Class aptent taciti sociosqu ad litora torquent pe</p>
                             <p className='text-[#697585] text-base font-semibold leading-8 w-[678px] pb-12.5'>Himenaeos. Vestibulum sollicitudin varius mauris non dignissim. Sed quis iaculis est. Nulla quam neque, interdum vitae fermentum lacinia, interdum eu magna. Mauris non posuere tellus. Donec quis euismod tellus. Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus, ac dapibus dolo</p>
                             {/* progress */}
@@ -56,7 +56,7 @@ const TeacherDetails = () => {
                                     <span className="text-[20px] font-semibold text-primary ">UI / UX Design</span>
                                     <span className="text-[20px] font-medium text-[#697585]">80%</span>
                                 </div>
-                                <Progress value={progressValues.uiux} className="w-full bg-[#E4E4E4] *:bg-[#4F5DE4] *:duration-2000"/>
+                                <Progress value={progressValues.uiux} className="w-full bg-[#E4E4E4] *:bg-primarys *:duration-2000"/>
                             </div>
                             {/* icon */}
                             <div className="pt-7.5 pb-12.5">
@@ -77,7 +77,7 @@ const TeacherDetails = () => {
                             </div>
                             {/* btn */}
                             <div className="bg-[#f58c37]  text-white text-[18px] font-bold rounded-md w-[178px]">
-                            <Button btnText={<>Get In Touch<FaArrowRight /></>}className={"bg-secondary py-[19px] px-5 rounded-md clip-ss flex items-center gap-x-2"}/>
+                            <Button btnText={<>Get In Touch<FaArrowRight /></>}className={"bg-secondarys py-[19px] px-5 rounded-md clip-ss flex items-center gap-x-2"}/>
                             </div>
                         </div>
                     </Flex>

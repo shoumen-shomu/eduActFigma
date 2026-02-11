@@ -4,7 +4,7 @@ import Container from "../components/Container"
 import Commonh3 from "../components/Commonh3"
 import Flex from "../components/Flex"
 import Button from "../components/Button"
-import { FaArrowRightLong } from "react-icons/fa6"
+import { FaArrowRight, FaArrowRightLong } from "react-icons/fa6"
 import { FiMapPin } from "react-icons/fi"
 import { TfiEmail } from "react-icons/tfi"
 import { PiPhoneCall } from "react-icons/pi"
@@ -32,8 +32,8 @@ const Contact = () => {
           {/* common text part */}
           <div className="text-center lg:pt-30">
               <div className='gap-x-[15px] items-center flex justify-center'>
-                  <Commonh4 commonh4={'Contact with  Us'} className={'text-primary '}/>
-                  <div className="flex items-center text-secondary text-[20px]">
+                  <Commonh4 commonh4={'Contact with  Us'} className={'text-primarys '}/>
+                  <div className="flex items-center text-secondarys text-[20px]">
                       <BiSolidChevronsRight/>
                       <BiSolidChevronsRight className='-ml-2'/>
                   </div>
@@ -53,30 +53,25 @@ const Contact = () => {
               <textarea name="" placeholder="Write a Message" rows={5} cols={5} className="py-[25px] px-7.5 bg-[#F6F6F6] text-[#697585] text-base font-bold rounded-sm outline-none w-[868px]"></textarea>
             </Flex>
             {/* button */}
-            <div className="flex justify-center items-center pb-30">
-                <div className="relative cursor-pointer">
-                    <Button 
-                        btnText={'Send a Message'} 
-                        className={'py-5 pr-16 pl-6 bg-secondary rounded-md text-white text-[18px] font-bold block'}/>
-                    <FaArrowRightLong className='text-white font-bold absolute right-10 top-1/2 -translate-y-1/2' />
-                </div>
+            <div className="bg-[#f58c37] mx-auto text-white text-[18px] font-bold rounded-md w-[227px] mb-7.5">
+              <Button btnText={<>Send a Message<FaArrowRight /></>}className={"bg-secondarys py-[19px] px-8 rounded-md w-[227px] clip-ss flex items-center gap-x-2"}/>
             </div>
             {/* button */}
             {/* cart part */}
             <div className="">
               <Flex className={'lg:justify-center lg:flex-row flex-col gap-y-5 '}>
-                <div className=" py-[45px] shadow-newMade text-center group hover:bg-primary duration-300 w-full lg:w-1/3 lg:rounded-tl-[14px] lg:rounded-bl-[14px] lg:rounded-tr-none lg:rounded-br-none rounded-[14px]">
-                    <PiPhoneCall className="text-[45px] group-hover:text-white text-primary mx-auto"/>
+                <div className=" py-[45px] shadow-newMade text-center group hover:bg-primarys duration-300 w-full lg:w-1/3 lg:rounded-tl-[14px] lg:rounded-bl-[14px] lg:rounded-tr-none lg:rounded-br-none rounded-[14px]">
+                    <PiPhoneCall className="text-[45px] group-hover:text-white text-primarys mx-auto"/>
                     <p className="text-[#697585] text-[20px] font-medium pt-4 pb-2 group-hover:text-white">Have any question?</p>
                     <p className="text-primaryTwo text-[24px] font-bold group-hover:text-white">Free + 23 (000)-8050</p>
                 </div>
-                <div className=" py-[45px] shadow-newMade text-center group hover:bg-primary duration-300 w-full lg:w-1/3 lg:rounded-none rounded-[14px]">
-                    <TfiEmail className="text-[45px] group-hover:text-white text-primary mx-auto"/>
+                <div className=" py-[45px] shadow-newMade text-center group hover:bg-primarys duration-300 w-full lg:w-1/3 lg:rounded-none rounded-[14px]">
+                    <TfiEmail className="text-[45px] group-hover:text-white text-primarys mx-auto"/>
                     <p className="text-[#697585] text-[20px] font-medium pt-4 pb-2 group-hover:text-white">Send Email</p>
                     <p className="text-primaryTwo text-[24px] font-bold group-hover:text-white">Demo@gmail.com</p>
                 </div>
-                <div className=" py-[45px] shadow-newMade text-center group hover:bg-primary duration-300 w-full lg:w-1/3 lg:rounded-tr-[14px] lg:rounded-br-[14px] lg:rounded-tl-none lg:rounded-bl-none rounded-[14px]">
-                    <FiMapPin className="text-[45px] group-hover:text-white text-primary mx-auto"/>
+                <div className=" py-[45px] shadow-newMade text-center group hover:bg-primarys duration-300 w-full lg:w-1/3 lg:rounded-tr-[14px] lg:rounded-br-[14px] lg:rounded-tl-none lg:rounded-bl-none rounded-[14px]">
+                    <FiMapPin className="text-[45px] group-hover:text-white text-primarys mx-auto"/>
                     <p className="text-[#697585] text-[20px] font-medium pt-4 pb-2 group-hover:text-white">Visit Anytime</p>
                     <p className="text-primaryTwo text-[24px] font-bold group-hover:text-white">6391 Elgin St. Delaware 10299</p>
                 </div>

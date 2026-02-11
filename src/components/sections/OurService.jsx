@@ -23,7 +23,7 @@ const OurService = () => {
                 >
                   <Commonh4
                     commonh4={"Our Service"}
-                    className={"font-Urbanist text-primary leading-[26px]"}
+                    className={"text-primarys leading-[26px]"}
                   />
                   <div className="flex items-center gap-x-[5px]">
                     <svg
@@ -84,11 +84,11 @@ const OurService = () => {
                 />
               </header>
               <Flex className={"gap-3.5 justify-end pb-[43px]"}>
-                <div className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primary transition-all cursor-pointer duration-300  ">
-                  <FaArrowLeftLong className="text-primary group-hover:text-white" />
+                <div className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primarys transition-all cursor-pointer duration-300  ">
+                  <FaArrowLeftLong className="text-primarys group-hover:text-white" />
                 </div>
-                <div className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primary transition-all cursor-pointer duration-300">
-                  <FaArrowRightLong className="text-primary group-hover:text-white" />
+                <div className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primarys transition-all cursor-pointer duration-300">
+                  <FaArrowRightLong className="text-primarys group-hover:text-white" />
                 </div>
               </Flex>
               <Flex className={"gap-9"}>

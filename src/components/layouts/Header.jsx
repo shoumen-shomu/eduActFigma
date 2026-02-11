@@ -59,7 +59,7 @@ const Header = () => {
           </Flex>
           {/* Search & User */}
           {/* Button */}
-          <div className="bg-primary py-4 pl-4 pr-12.5 rounded-tl-full rounded-bl-full ml-25">
+          <div className="bg-primarys py-4 pl-4 pr-12.5 rounded-tl-full rounded-bl-full ml-25">
             <Link to={""}>
               <Flex className={"gap-x-4"}>
                 <div className="text-primary bg-white text-[28px] p-3 rounded-full">

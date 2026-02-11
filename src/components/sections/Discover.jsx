@@ -1,7 +1,7 @@
 
 import Commonh3 from '../Commonh3'
 import Button from '../Button'
-import { FaArrowRightLong } from 'react-icons/fa6'
+import { FaArrowRight, FaArrowRightLong } from 'react-icons/fa6'
 
 const Discover = () => {
     return (
@@ -13,9 +13,8 @@ const Discover = () => {
                     <Commonh3 commonh3={'Discover the campus through a video tour'} className={'leading-10 lg:w-132 text-white lg:pb-10 pb-3 text-center lg:text-left'}/>
                     {/* common tag */}
                     {/* button */}
-                    <div className="relative text-center lg:text-left cursor-pointer">
-                        <Button btnText={'Discover More'} className={'py-5 pr-14 pl-6 bg-secondary rounded-md text-white text-[18px] font-bold relative'}/>
-                        <FaArrowRightLong className='text-white font-bold absolute top-1/2 lg:left-37 left-60 -translate-y-1/2'/>
+                    <div className="bg-[#f58c37]  text-white text-[18px] font-bold rounded-md w-52">
+                    <Button btnText={<>Discover More<FaArrowRight /></>}className={"bg-secondarys py-[19px] px-8 rounded-md w-52 clip-ss flex items-center gap-x-2"}/>
                     </div>
                     {/* button */}
                 </div>

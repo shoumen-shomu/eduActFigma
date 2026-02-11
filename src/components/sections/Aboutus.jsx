@@ -7,7 +7,7 @@ import aboutUsIcon from "/src/assets/aboutUsRightIcon.png";
 import aboutUsRight from "/src/assets/aboutUsRight.png";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import Button from "../Button";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowRight, FaArrowRightLong } from "react-icons/fa6";
 
 const Aboutus = () => {
   return (
@@ -19,7 +19,7 @@ const Aboutus = () => {
           </div>
           <div className="">
             <div className="flex items-center gap-x-2">
-              <h4 className="text-2xl text-primary font-bold ">
+              <h4 className="text-2xl text-primarys font-bold ">
                 About Us
               </h4>
               <Images imgSrc={aboutUsIcon} className={"h-2.5 w-2.5"} />
@@ -35,31 +35,27 @@ const Aboutus = () => {
             <Images imgSrc={aboutUsRight} />
             <div className="flex gap-x-[65px] mt-12">
               <div className="flex items-center gap-x-3">
-                <IoIosCheckmarkCircle className="text-primary text-[20px] font-bold" />
+                <IoIosCheckmarkCircle className="text-primarys text-[20px] font-bold" />
                 <h4>Free Incoming method</h4>
               </div>
               <div className="flex items-center gap-x-3">
-                <IoIosCheckmarkCircle className="text-secondary text-[20px] font-bold" />
+                <IoIosCheckmarkCircle className="text-secondarys text-[20px] font-bold" />
                 <h4>Provide Best Support</h4>
               </div>
             </div>
-            <div className="flex gap-x-[72px] mt-1">
+            <div className="flex gap-x-[72px] mt-1 pb-12.5">
               <div className="flex items-center gap-x-3">
-                <IoIosCheckmarkCircle className="text-secondary text-[20px] font-bold" />
+                <IoIosCheckmarkCircle className="text-secondarys text-[20px] font-bold" />
                 <h4>Expert Many Teacher </h4>
               </div>
               <div className="flex items-center gap-x-3">
-                <IoIosCheckmarkCircle className="text-primary text-[20px] font-bold " />
+                <IoIosCheckmarkCircle className="text-primarys text-[20px] font-bold " />
                 <h4>Lifetime access </h4>
               </div>
             </div>
-            <button
-              className={
-                "mt-12 bg-primtext-primary py-6 px-[31px] rounded-md text-white cursor-pointer text-[18px] font-black flex items-center gap-x-2.5"
-              }
-            >
-              Discover More <FaArrowRightLong />
-            </button>
+            <div className="  bg-primarys/79 text-white text-[18px] font-bold rounded-md w-[178px] ">
+              <Button btnText={<>Try for fee<FaArrowRight /></>}className={"bg-primarys py-[19px] px-8 rounded-md w-[178px] clip-ss flex items-center gap-x-2"}/>
+            </div>
           </div>
         </Flex>
       </Container>
