@@ -5,14 +5,14 @@ import Discover from "../components/sections/Discover";
 import Aboutus from "../components/sections/Aboutus";
 
 const Home = () => {
-    return (
-        <>
-        <Banner />
-        <Aboutus/>
-        <OurCategories />
-        <Discover />
-        </>
-    );
+        return (
+                <>
+                <Banner />
+                <Aboutus/>
+                <OurCategories />
+                <Discover />
+                </>
+        );
 };
 
 export default Home
