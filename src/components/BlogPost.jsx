@@ -3,7 +3,7 @@ import Flex from "./Flex";
 
 const BlogPost = () => {
   return (
-    <div className="bg-[#152B4A] h-[488px] w-[416px] rounded-[14px] relative group">
+    <div className="bg-[#152B4A] h-[488px] w-[416px] rounded-[14px] relative group mb-20">
       <div className="absolute w-[357px] bg-white -bottom-20 left-1/2 -translate-x-1/2 shadow-newMade p-7 rounded-tl-[10px] rounded-tr-[10px] rounded-bl-[50px] rounded-br-[50px]">
         <Flex className={"gap-x-25"}>
           <p className="text-sm text-white bg-primary font-semibold py-2 px-2.5 rounded-[5px]">
