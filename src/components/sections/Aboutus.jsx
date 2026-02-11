@@ -20,7 +20,7 @@ const Aboutus = () => {
           <div className="">
             <div className="flex items-center gap-x-2">
               <h4 className="text-2xl text-[#4F5DE4] font-black font-Urbanist">
-                aboutUs
+                about Us
               </h4>
               <Images imgSrc={aboutUsIcon} className={"h-[10px] w-[10px]"} />
             </div>
