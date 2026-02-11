@@ -8,8 +8,8 @@ const Discover = () => {
     return (
         <>
         <section className='discover'>
-            <Container className="lg:w-330">
-                <div className={"bg-[url('/src/assets/discoverBg.png')] bg-center bg-cover bg-no-repeat py-20 lg:px-30 px-5"}>
+            {/* <Container> */}
+                <div className={"bg-[url('/src/assets/discoverBg.png')] bg-center bg-cover bg-no-repeat py-20 lg:px-30 w-full lg:w-330 px-5 mx-auto"}>
                     {/* common tag */}
                     <Commonh3 commonh3={'Discover the campus through a video tour'} className={'leading-10 lg:w-132 text-white lg:pb-10 pb-3 text-center lg:text-left'}/>
                     {/* common tag */}
@@ -20,7 +20,7 @@ const Discover = () => {
                     </div>
                     {/* button */}
                 </div>
-            </Container>
+            {/* </Container> */}
         </section>
         </>
     )
