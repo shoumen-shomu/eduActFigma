@@ -51,9 +51,41 @@ export const ProductDetails = () => {
                     <FaStar className="text-[20px] text-secondary" />
                     <FaStar className="text-[20px] text-secondary" />
                   </div>
-                  <p className="font-Urbanist font-bold text-[20px] text-[#697585] leading-[26px]">2 Customer Review</p>
+                  <p className="font-Urbanist font-bold text-[20px] text-[#697585] leading-[26px]">
+                    2 Customer Review
+                  </p>
                 </div>
-                <div className="w-[529px] border-b border-[#E4E4E4] mt-10"></div>
+                <div className="w-[529px] border-b border-[#E4E4E4] my-10"></div>
+                <p className="w-[510px] font-Urbanist font-semibold text-base text-[#697585] leading-8">
+                  Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam
+                  nec eros id magna hendrerit sagittis. Nullam sed mi non odio
+                  feugiat volutpat sit amet nec elit. Maecenas id hendrerit
+                  ipsum.{" "}
+                </p>
+                <p className="font-Urbanist font-semibold text-[20px] text-[#697585] leading-[26px] pt-10 pb-7">
+                  REF. 305/639
+                </p>
+                <p className="font-Urbanist font-semibold text-[20px] text-[#F57005] leading-[26px]">
+                  In stock
+                </p>
+                <div className="flex gap-[30px] items-center mt-10">
+                  <p className="font-Urbanist font-bold text-[20px] text-primaryTwo leading-[26px]">
+                    Quantity
+                  </p>
+                  <div className="flex items-center border-2 border-[#E4E4E4] rounded-[10px]">
+                    <button className="w-13 h-11 flex items-center justify-center cursor-pointer">
+                      <span className="text-[23px] text-primaryTwo">–</span>
+                    </button>
+                    <div className="w-18 h-11 flex items-center justify-center border-x-2 border-[#E4E4E4]">
+                      <span className="font-Urbanist font-bold text-[20px] text-primaryTwo">2</span>
+                    </div>
+
+                    {/* Increment Button */}
+                    <button className="w-13 h-11 flex items-center justify-center cursor-pointer">
+                      <span className="text-[23px] text-primaryTwo">+</span>
+                    </button>
+                  </div>
+                </div>
               </div>
             </Flex>
           </Container>
