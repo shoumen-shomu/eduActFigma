@@ -6,6 +6,7 @@ import Contact from './pages/Contact'
 import Error from './pages/Error'
 import TeacherDetails from './pages/TeacherDetails'
 import Blog from './pages/Blog'
+import Login from './pages/Login'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/contact" element={<Contact/>} />
           <Route path="/teacherDetails" element={<TeacherDetails/>} />
           <Route path="/blog" element={<Blog/>} />
+          <Route path="/login" element={<Login/>} />
         </Route>
           <Route path="*" element={<Error/>} />
       </Routes>
