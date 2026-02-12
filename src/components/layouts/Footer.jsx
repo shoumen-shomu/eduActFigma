@@ -21,32 +21,32 @@ const Footer = () => {
                 <div className="pt-7.5">
                   {/* address */}
                   <div className="address flex gap-x-4 items-center">
-                    <FiMapPin className="text-[25px] text-secondary"/>
+                    <FiMapPin className="text-[25px] text-secondarys"/>
                     <p className="text-[#B3ADE1] text-[18px]">6391 Elgin St. Celina, Delaware 10299</p>
                   </div>
                   {/* phone */}
                   <div className="address flex gap-x-4 items-center py-6">
-                    <PiPhoneCall className="text-[25px] text-secondary"/>
+                    <PiPhoneCall className="text-[25px] text-secondarys"/>
                     <p className="text-[#B3ADE1] text-[18px]">(303) 555-0105</p>
                   </div>
                   {/* mail */}
                   <div className="address flex gap-x-4 items-center">
-                    <TfiEmail className="text-[25px] text-secondary"/>
+                    <TfiEmail className="text-[25px] text-secondarys"/>
                     <p className="text-[#B3ADE1] text-[18px]">michael.mitc@example.com</p>
                   </div>
                   {/* logo */}
                   <div className="pt-7.5">
                     <Flex className={'gap-x-4'}>
-                      <div className="px-3 py-3 border-2 border-primary text-white rounded-full cursor-pointer">
+                      <div className="px-3 py-3 border-2 border-primarys text-white rounded-full cursor-pointer">
                         <FaFacebookF  className="text-[15px]"/>
                       </div>
-                      <div className="px-3 py-3 border-2 border-primary text-white rounded-full cursor-pointer">
+                      <div className="px-3 py-3 border-2 border-primarys text-white rounded-full cursor-pointer">
                         <FaLinkedinIn className="text-[15px]"/>
                       </div>
-                      <div className="px-3 py-3 border-2 border-primary text-white rounded-full cursor-pointer">
+                      <div className="px-3 py-3 border-2 border-primarys text-white rounded-full cursor-pointer">
                         <FaTwitter   className="text-[15px]"/>
                       </div>
-                      <div className="px-3 py-3 border-2 border-primary text-white rounded-full cursor-pointer">
+                      <div className="px-3 py-3 border-2 border-primarys text-white rounded-full cursor-pointer">
                         <FaYoutube   className="text-[15px]"/>
                       </div>
                     </Flex>
