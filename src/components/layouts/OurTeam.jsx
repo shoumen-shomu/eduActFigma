@@ -7,6 +7,7 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import brandLogo from "/src/assets/brandLogo.png"
 
 const OurTeam = () => {
   return (
@@ -28,7 +29,7 @@ const OurTeam = () => {
         <div className="bg-[url('/src/assets/teamBG.png')] h-[430px] bg-no-repeat bg-center bg-cover relative">
           <Container>
             <div className="absolute left-1/2 bottom-[120px] -translate-x-1/2">
-              <div className="flex items-center gap-[35px]">
+              <div className="flex items-center gap-9">
                 <div className="group">
                   <div className="h-[310px] w-[416px] bg-secondary group-hover:bg-primary transition-all duration-500 rounded-b-full relative">
                     <div className="w-[350px] h-[510px] rounded-full absolute left-1/2 bottom-[35px] -translate-x-1/2 overflow-hidden">
@@ -156,6 +157,17 @@ const OurTeam = () => {
             </div>
           </Container>
         </div>
+      </div>
+      {/* Brand Logo Part */}
+      <div className="pt-30">
+        <Container>
+          <div className="flex justify-around">
+            <Images imgSrc={brandLogo}/>
+            <Images imgSrc={brandLogo}/>
+            <Images imgSrc={brandLogo}/>
+            <Images imgSrc={brandLogo}/>
+          </div>
+        </Container>
       </div>
     </div>
   );
