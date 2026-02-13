@@ -13,6 +13,7 @@ import Product from './pages/Product'
 import BecomeTeacher from './pages/BecomeTeacher'
 import Teacher from './pages/Teacher'
 import Gallery from './pages/Gallery'
+import About from './pages/About'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/becomeTeacher" element={<BecomeTeacher/>} />
           <Route path="/teacher" element={<Teacher/>} />
           <Route path="/gallery" element={<Gallery/>} />
+          <Route path="/about" element={<About/>} />
         </Route>
           <Route path="*" element={<Error/>} />
       </Routes>
