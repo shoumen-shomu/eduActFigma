@@ -8,6 +8,7 @@ import Blog from "./pages/Blog";
 import Login from "./pages/Login";
 import BlogSidebar from "./pages/BlogSidebar";
 import BlogDetailes from "./pages/BlogDetailes";
+import Faq from "./pages/Faq";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/blogSidebar" element={<BlogSidebar />} />
           <Route path="/blogDetailes" element={<BlogDetailes />} />
+          <Route path="/faq" element={<Faq />} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>
