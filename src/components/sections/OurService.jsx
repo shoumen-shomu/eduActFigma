@@ -1,4 +1,3 @@
-
 import Commonh4 from "../Commonh4";
 import Container from "../Container";
 import Flex from "../Flex";
@@ -17,13 +16,13 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useState } from "react"
 
 const OurService = () => {
-  const [swiperRef, setSwiperRef] = useState("");
+  const [swiperRef, setSwiperRef] = useState(null);
 
   return (
     <>
       <section className="OurService">
-        <div className="mt-[119px] mb-[98px]">
-          <div className="bg-[url('/src/assets/serviceBg.png')] py-[120px] bg-cover bg-no-repeat bg-center">
+        <div className="lg:mt-[119px] lg:mb-[98px] mt-16 mb-16">
+          <div className="bg-[url('/src/assets/serviceBg.png')] lg:py-[120px] py-14 bg-cover bg-no-repeat bg-center">
             <Container>
               {/* Service Header Start */}
               <header>
@@ -88,16 +87,16 @@ const OurService = () => {
                 <Commonh3
                   commonh3={"Creating a Lifelong Learning Best Community "}
                   className={
-                    "font-Urbanist text-primaryTwo leading-[47px] w-[592px] mx-auto text-center"
+                    "font-Urbanist text-primaryTwo leading-9 lg:leading-[47px] w-full lg:w-[592px] mx-auto text-center px-2"
                   }
                 />
               </header>
               {/* Service Header End */}
               {/* Arrow Start */}
-              <Flex className={"gap-3.5 justify-end pb-[43px]"}>
+              <Flex className={"gap-3.5 justify-center lg:justify-end pb-[30px] lg:pb-[43px] pt-10"}>
                 <button
                   onClick={() => swiperRef?.slidePrev()}
-                  className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primarys transition-all cursor-pointer duration-300  "
+                  className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primarys transition-all cursor-pointer duration-300"
                 >
                   <FaArrowLeftLong className="text-primarys group-hover:text-white" />
                 </button>
@@ -113,10 +112,19 @@ const OurService = () => {
               <Flex className={"gap-9"}>
                 <Swiper
                   onSwiper={setSwiperRef}
-                  modules={[Navigation,Pagination, Autoplay]}
+                  modules={[Navigation, Pagination, Autoplay]}
                   spaceBetween={30}
-                  slidesPerView={4}
                   loop={true}
+                  breakpoints={{
+                    320: {
+                      slidesPerView: 1,
+                      spaceBetween: 20,
+                    },
+                    1024: {
+                      slidesPerView: 4,
+                      spaceBetween: 30,
+                    },
+                  }}
                 >
                   <SwiperSlide>
                     <ServiceCard
