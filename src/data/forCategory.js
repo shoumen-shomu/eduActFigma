@@ -4,7 +4,8 @@ import c3 from '/src/assets/c3.png'
 import c4 from '/src/assets/c4.png'
 import p1 from '/src/assets/p1.png'
 import stars from '/src/assets/stars.png'
-
+import Ashfak from '../../src/assets/ashfak.png'
+import { FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 
 export const forCategory = [
@@ -103,4 +104,27 @@ export const productApi = [
         productPrice : '$30.00' ,
         productRating : stars,
     },
+]
+
+
+
+export const team = [
+    {
+        id: 1,
+        teamImg: Ashfak,
+        teamName: 'Ashfak',
+        jobTitle: 'Front end developer',
+    },
+    {
+        id: 2,
+        teamImg: Ashfak,
+        teamName: 'Karim',
+        jobTitle: 'Front end developer',
+    },
+    {
+        id: 3,
+        teamImg: Ashfak,
+        teamName: 'Rahim',
+        jobTitle: 'Front end developer',
+    }
 ]

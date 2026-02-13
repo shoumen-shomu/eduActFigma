@@ -2,168 +2,59 @@ import React from "react";
 import Container from "../Container";
 import Images from "../Images";
 import HeadingImg from "/src/assets/headingImg.png";
-import Ashfak from "/src/assets/ashfak.png";
-import { FaFacebookF } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { Link } from "react-router-dom";
-import brandLogo from "/src/assets/brandLogo.png"
+import brandLogo from "/src/assets/brandLogo.png";
+import Team from "../Team";
+import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { team } from "@/data/forCategory";
+import Flex from "../Flex";
 
 const OurTeam = () => {
   return (
-    <div className="font-Urbanist py-30">
+    <div className="font-Urbanist py-16 lg:py-30">
       <Container>
-        {/* Heading Part  */}
-        <div className="text-center">
-          <div className="flex items-center justify-center gap-x-[15px]">
-            <h4 className="text-primarys text-2xl font-bold">Our Team</h4>
+        {/* Heading Part */}
+        <div className="text-center px-4">
+          <div className="flex items-center justify-center gap-x-[15px] pb-5 lg:pb-0">
+            <h4 className="text-primarys text-xl lg:text-2xl font-bold">Our Team</h4>
             <Images imgSrc={HeadingImg} />
           </div>
-          <h3 className="w-[510px] mx-auto text-primaryTwo text-[40px] font-bold">
+          <h3 className="w-full lg:w-[510px] mx-auto text-primaryTwo lg:text-[40px] text-[28px] font-bold leading-tight">
             Meet Our Professional Team Members
           </h3>
         </div>
       </Container>
       {/* Team Part */}
-      <div className="pt-80">
-        <div className="bg-[url('/src/assets/teamBG.png')] h-[430px] bg-no-repeat bg-center bg-cover relative">
+      <div className="pt-50 lg:pt-80">
+        <div className="lg:bg-[url('/src/assets/teamBG.png')] lg:h-[430px] bg-no-repeat bg-center bg-cover relative">
           <Container>
-            <div className="absolute left-1/2 bottom-[120px] -translate-x-1/2">
-              <div className="flex items-center gap-9">
-                <div className="group">
-                  <div className="h-[310px] w-[416px] bg-secondarys group-hover:bg-primarys transition-all duration-500 rounded-b-full relative">
-                    <div className="w-[350px] h-[510px] rounded-full absolute left-1/2 bottom-[35px] -translate-x-1/2 overflow-hidden">
-                      <Images
-                        imgSrc={Ashfak}
-                        className="w-full h-full object-cover rounded-full"
-                      />
-                      <div className="absolute inset-0 bg-[#181818]/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full flex items-center justify-center">
-                        <div className="text-center text-white">
-                          <h4 className="text-[32px] font-bold">
-                            Ashfak Mahmud
-                          </h4>
-                          <h5 className="text-xl pb-6">Front-End Developer</h5>
-                          <div className="flex items-center justify-center gap-x-3">
-                            <Link
-                              to={"https://www.facebook.com/ashfakmahmuddev"}
-                              target="_blank"
-                              className="h-10 w-10 flex items-center justify-center border border-primarys rounded-full hover:bg-primarys transition-all duration-400">
-                              <FaFacebookF />
-                            </Link>
-                            <Link
-                              to={"https://github.com/ashfakmahmuddev"}
-                              target="_blank"
-                              className="h-10 w-10 flex items-center justify-center border border-primarys rounded-full hover:bg-primarys transition-all duration-400">
-                              <FaGithub />
-                            </Link>
-                            <Link
-                              to={"https://www.linkedin.com/in/ashfakmahmuddev"}
-                              target="_blank"
-                              className="h-10 w-10 flex items-center justify-center border border-primarys rounded-full hover:bg-primarys transition-all duration-400">
-                              <FaLinkedinIn />
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <Flex className="flex-wrap lg:flex-nowrap justify-center lg:justify-between gap-y-40 lg:gap-y-0 px-4">
+              {team.map((item) => (
+                <div key={item.id} className="w-full sm:w-[80%] md:w-[45%] lg:w-[32%] flex justify-center">
+                  <Team
+                    teamImg={item.teamImg}
+                    teamName={item.teamName}
+                    jobTitle={item.jobTitle}
+                    icon1={<FaFacebookF />}
+                    link1=""
+                    icon2={<FaGithub />}
+                    link2=""
+                    icon3={<FaLinkedinIn />}
+                    link3=""
+                  />
                 </div>
-                <div className="group">
-                  <div className="h-[310px] w-[416px] bg-secondarys group-hover:bg-primarys transition-all duration-500 rounded-b-full relative">
-                    <div className="w-[350px] h-[510px] rounded-full absolute left-1/2 bottom-[35px] -translate-x-1/2 overflow-hidden">
-                      <Images
-                        imgSrc={Ashfak}
-                        className="w-full h-full object-cover rounded-full"
-                      />
-                      <div className="absolute inset-0 bg-[#181818]/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full flex items-center justify-center">
-                        <div className="text-center text-white">
-                          <h4 className="text-[32px] font-bold">
-                            Ashfak Mahmud
-                          </h4>
-                          <h5 className="text-xl pb-6">Front-End Developer</h5>
-                          <div className="flex items-center justify-center gap-x-3">
-                            <Link
-                              to={"https://www.facebook.com/ashfakmahmuddev"}
-                              target="_blank"
-                              className="h-10 w-10 flex items-center justify-center border border-primarys rounded-full hover:bg-primarys transition-all duration-400"
-                            >
-                              <FaFacebookF />
-                            </Link>
-                            <Link
-                              to={"https://github.com/ashfakmahmuddev"}
-                              target="_blank"
-                              className="h-10 w-10 flex items-center justify-center border border-primarys rounded-full hover:bg-primarys transition-all duration-400"
-                            >
-                              <FaGithub />
-                            </Link>
-                            <Link
-                              to={"https://www.linkedin.com/in/ashfakmahmuddev"}
-                              target="_blank"
-                              className="h-10 w-10 flex items-center justify-center border border-primarys rounded-full hover:bg-primarys transition-all duration-400"
-                            >
-                              <FaLinkedinIn />
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="group">
-                  <div className="h-[310px] w-[416px] bg-secondarys group-hover:bg-primarys transition-all duration-500 rounded-b-full relative">
-                    <div className="w-[350px] h-[510px] rounded-full absolute left-1/2 bottom-[35px] -translate-x-1/2 overflow-hidden">
-                      <Images
-                        imgSrc={Ashfak}
-                        className="w-full h-full object-cover rounded-full"
-                      />
-                      <div className="absolute inset-0 bg-[#181818]/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full flex items-center justify-center">
-                        <div className="text-center text-white">
-                          <h4 className="text-[32px] font-bold">
-                            Ashfak Mahmud
-                          </h4>
-                          <h5 className="text-xl pb-6">Front-End Developer</h5>
-                          <div className="flex items-center justify-center gap-x-3">
-                            <Link
-                              to={"https://www.facebook.com/ashfakmahmuddev"}
-                              target="_blank"
-                              className="h-10 w-10 flex items-center justify-center border border-primarys rounded-full hover:bg-primarys transition-all duration-400"
-                            >
-                              <FaFacebookF />
-                            </Link>
-                            <Link
-                              to={"https://github.com/ashfakmahmuddev"}
-                              target="_blank"
-                              className="h-10 w-10 flex items-center justify-center border border-primarys rounded-full hover:bg-primarys transition-all duration-400"
-                            >
-                              <FaGithub />
-                            </Link>
-                            <Link
-                              to={"https://www.linkedin.com/in/ashfakmahmuddev"}
-                              target="_blank"
-                              className="h-10 w-10 flex items-center justify-center border border-primarys rounded-full hover:bg-primarys transition-all duration-400"
-                            >
-                              <FaLinkedinIn />
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              ))}
+            </Flex>
           </Container>
         </div>
       </div>
-      {/* Brand Logo Part */}
-      <div className="pt-30">
+      <div className="pt-32 lg:pt-40">
         <Container>
-          <div className="flex justify-around">
-            <Images imgSrc={brandLogo}/>
-            <Images imgSrc={brandLogo}/>
-            <Images imgSrc={brandLogo}/>
-            <Images imgSrc={brandLogo}/>
-            <Images imgSrc={brandLogo}/>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:justify-around gap-8 items-center justify-items-center opacity-50 px-4">
+            <Images imgSrc={brandLogo} className="w-24 lg:w-auto" />
+            <Images imgSrc={brandLogo} className="w-24 lg:w-auto" />
+            <Images imgSrc={brandLogo} className="w-24 lg:w-auto" />
+            <Images imgSrc={brandLogo} className="w-24 lg:w-auto" />
+            <Images imgSrc={brandLogo} className="w-24 lg:w-auto" />
           </div>
         </Container>
       </div>
