@@ -18,6 +18,7 @@ import BlogDetailes from "./pages/BlogDetailes";
 import Faq from "./pages/Faq";
 import About from './pages/About'
 import { ProductDetails } from './pages/ProductDetails'
+import Coursepage from './pages/Coursepage'
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           <Route path="/blogDetailes" element={<BlogDetailes/>} />
           <Route path="/faq" element={<Faq/>} />
           <Route path="/productDetails" element={<ProductDetails/>} />
+          <Route path="/coursePage" element={<Coursepage/>} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>
