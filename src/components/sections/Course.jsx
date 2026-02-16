@@ -26,6 +26,7 @@ const Course = () => {
                     {/* common text part */}
                     {/* course card part */}
                     <div className="pt-20 flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 lg:justify-between items-center">
+                        {/* 1st card */}
                         <CourseCard 
                             className={'lg:w-1/3'}
                             courseTime={'20 Hours'}
@@ -36,6 +37,7 @@ const Course = () => {
                             price={'$473.00'}
                             lessons={'15 Lessons'}
                         />
+                        {/* 2nd card */}
                         <CourseCard 
                             className={'lg:w-1/3'}
                             courseTime={'20 Hours'}
@@ -46,6 +48,7 @@ const Course = () => {
                             price={'$473.00'}
                             lessons={'15 Lessons'}
                         />
+                        {/* 3rd card */}
                         <CourseCard 
                             className={'lg:w-1/3'}
                             courseTime={'20 Hours'}
