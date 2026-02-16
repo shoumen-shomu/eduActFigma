@@ -5,7 +5,7 @@ import { PlayCircle, Folder, Lightbulb } from 'lucide-react';
 
 
 
-const cDetails = () => {
+const Cdetails = () => {
   return (
     <div className="py-10 ml-20 px-2 w-[868px]">
       <Container>
@@ -71,7 +71,7 @@ const cDetails = () => {
 
           <div className="flex flex-col border-t border-[#E8EDF2]">
              {/* Item: Introduction */}
-             <div className="flex items-center justify-between py-5 border-b border-[#E8EDF2]">
+            <div className="flex items-center justify-between py-5 border-b border-[#E8EDF2]">
               <div className="flex items-center gap-4">
                 <PlayCircle className="text-[#F15A24]" size={24} />
                 <span className="text-primaryTwo text-lg font-bold font-Urbanist">Introduction of Editing</span>
@@ -101,4 +101,4 @@ const cDetails = () => {
   );
 };
 
-export default cDetails;
+export default Cdetails;

@@ -26,7 +26,6 @@ const Header = () => {
           <Link to={"/"}>
             <Images imgSrc={logo} />
           </Link>
-
           {/* Desktop Menu */}
           <nav className="ml-[115px] mr-16 hidden lg:block">
             <ul className="lg:flex items-center gap-x-[55px] font-semibold text-primaryTwo text-base">
@@ -41,7 +40,6 @@ const Header = () => {
               <li>
                 <Link to={"/coursePage"}>Courses</Link>
               </li>
-
               {/* Pages Dropdown Parent */}
               <li
                 className="relative cursor-pointer select-none"
@@ -53,7 +51,6 @@ const Header = () => {
                     className={`transition-all ${dropshow ? "rotate-180" : ""}`}
                   />
                 </div>
-
                 {/* Dropdown */}
                 <div
                   className={`rounded-2xl px-5 py-4 absolute top-12 -left-10 shadow-newMade w-52 bg-white z-50 transition-all duration-300
@@ -100,6 +97,9 @@ const Header = () => {
                     </li>
                     <li className="hover:text-primarys">
                       <Link to={"/teacherDetails"}>Teacher Details</Link>
+                    </li>
+                    <li className="hover:text-primarys">
+                      <Link to={"/cdetails"}>Course Details</Link>
                     </li>
                   </ul>
                 </div>

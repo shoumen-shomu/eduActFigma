@@ -16,8 +16,9 @@ import BlogSidebar from "./pages/BlogSidebar";
 import BlogDetailes from "./pages/BlogDetailes";
 import Faq from "./pages/Faq";
 import About from "./pages/About";
-import { ProductDetails } from "./pages/ProductDetails";
+import ProductDetails from "./pages/ProductDetails";
 import Coursepage from "./pages/Coursepage";
+import Cdetails from "./pages/cDetails";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/productDetails" element={<ProductDetails />} />
           <Route path="/teacher" element={<Teacher />} />
           <Route path="/teacherDetails" element={<TeacherDetails />} />
+          <Route path="/cdetails" element={<Cdetails />} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>
