@@ -44,7 +44,6 @@ const BlogSidebar = () => {
               <h5 className="text-xl lg:text-2xl text-primaryTwo font-bold pb-6 border-b-2 border-dashed border-secondarys mb-7.5">
                 Latest Post
               </h5>
-              
               {/* Item 1 */}
               <Flex className="pb-7.5 border-b-2 border-[#E4E4E4] mb-7.5 gap-x-4 lg:gap-x-5">
                 <div className="h-20 w-20 lg:h-[90px] lg:w-[90px] rounded-[6px] bg-[#152B4A] shrink-0"></div>
