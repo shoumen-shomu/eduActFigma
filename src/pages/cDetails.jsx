@@ -22,7 +22,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import cdImg from '../assets/cdImg.png'
 import Rating from '../assets/Rating.png'
 import reviewimg from '../assets/reviewimg.png'
-
+// Fixed image import issue
 
 
 const Cdetails = () => {
