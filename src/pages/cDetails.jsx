@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Container from '@/components/Container';
-import { PlayCircle, Folder, Lightbulb } from 'lucide-react'; 
 import Flex from "@/components/Flex";
 import Images from "@/components/Images";
-import cdImg from '../../src/assets/cdImg.png'
-import Rating from '../../src/assets/Rating.png'
+import Button from "@/components/Button";
+// icon
+import { PlayCircle, Folder, Lightbulb } from 'lucide-react'; 
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { GiBackwardTime, GiNotebook } from "react-icons/gi";
 import { FcReading } from "react-icons/fc";
@@ -13,9 +13,13 @@ import { HiLightBulb } from "react-icons/hi";
 import { LiaLanguageSolid } from "react-icons/lia";
 import { FaArrowRight, FaStar } from "react-icons/fa";
 import { MdOutlineWatchLater } from "react-icons/md";
-import reviewImg from '../../src/assets/reviewimg.png'
-import Button from "@/components/Button";
 import { FaArrowRightLong } from "react-icons/fa6";
+// img
+import cdImg from '../../src/assets/cdImg.png'
+import Rating from '../../src/assets/Rating.png'
+import reviewImg from '../../src/assets/reviewimg.png'
+
+
 
 const Cdetails = () => {
   const [activeTab, setActiveTab] = useState('overview');
