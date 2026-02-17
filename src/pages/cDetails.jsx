@@ -17,7 +17,9 @@ import { FaArrowRightLong } from "react-icons/fa6";
 // img
 import cdImg from '../../src/assets/cdImg.png'
 import Rating from '../../src/assets/Rating.png'
-import reviewImg from '../../src/assets/reviewimg.png'
+// import reviewImg from '../../src/assets/reviewimg.png'
+
+import reviewImg from '../assets/reviewimg.png'
 
 
 
