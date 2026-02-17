@@ -306,7 +306,7 @@ const [count, setCount] = useState(1);
                 <FaArrowRightLong className="font-bold text-white absolute top-1/2 left-[13%] -translate-y-1/2" />
               </div>
             </div>
-            {/* Review Part Start */}
+            {/* Review Part end */}
           </Container>
         </div>
       </>
