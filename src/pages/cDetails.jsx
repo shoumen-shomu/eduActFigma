@@ -88,7 +88,7 @@ const Cdetails = () => {
                     </button>
                   </Flex>
                 </div>
-                {/* Content: Overview */}
+                {/* Overview */}
                 {activeTab === 'overview' && (
                   <div className="overview-content">
                     <div className="pt-12.5">
@@ -118,7 +118,7 @@ const Cdetails = () => {
                     </div>
                   </div>
                 )}
-                {/* Content: Curriculum */}
+                {/* Curriculum */}
                 {activeTab === 'curriculum' && (
                   <div className="py-10 px-2 lg:w-[868px]">
                     <Container>
